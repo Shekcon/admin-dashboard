@@ -1,0 +1,23 @@
+POST http://localhost:3000/api/auth/login HTTP/1.1
+content-type: application/json
+
+{
+    "username": "shekcon",
+    "password": "123456789"
+}
+
+###
+
+GET http://localhost:3000/api/users HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVkNTYxYmNlNzE5ZTQ1Njg1M2U1ZTdmYSIsInVzZXJuYW1lIjoic2hla2NvbiIsImlhdCI6MTU2NTkyNzcwNSwiZXhwIjoxNTY2NTMyNTA1fQ.qHyssAiyHpISmSAM8dL3vQZobs_4-HLsSk0LlXdbPjA
+
+###
+
+POST  http://localhost:3000/api/auth/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "lsang",
+    "password": "123456789",
+    "email": "lsang@gmail.com"
+}
